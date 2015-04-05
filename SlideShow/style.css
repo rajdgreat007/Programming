@@ -1,0 +1,15 @@
+#container{
+    margin: 0 auto;
+    width: 345px;
+}
+
+#container h3{
+    background: #aaaaaa;
+    padding: 5px;
+    width: 335px;
+}
+
+#container img{
+    padding: 10px;
+    border: 2px solid black;
+}

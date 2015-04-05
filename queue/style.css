@@ -1,0 +1,9 @@
+#container{
+    margin: 0 auto;
+    width: 500px;
+}
+
+#container h3{
+    background: #aaaaaa;
+    padding: 5px;
+}
