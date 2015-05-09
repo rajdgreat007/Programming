@@ -18,8 +18,9 @@ var anagarams = {
       }
       return Object.keys(obj).length === 0;
   },
-  init : function(){
-      var lines = document.getElementById('inputText').innerHTML.split('\n');
+  setResult : function(){
+      this.resultString = '';
+      var lines = document.getElementById('inputText').value.split('\n');
       var numTestCases = parseInt(lines[0]);
       for(var i = 1;i <=numTestCases;i++){
           var lineArr = lines[i].trim().split(' ');
@@ -31,6 +32,10 @@ var anagarams = {
           }
       }
       document.getElementById('output').innerHTML = this.resultString;
+  },
+  init : function(){
+      document.getElementById('check').onclick = this.setResult.bind(this);
+      this.setResult();
   }
 };
 window.onload = function(){
